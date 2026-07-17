@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project &bullet; Thnoxs</title>
+    <link rel="shortcut icon" href="https://www.google.com/s2/favicons?domain=https://www.todo.io" type="image/x-icon" />
   </head>
   <style>
     * {
@@ -12,8 +13,48 @@
       box-sizing: border-box;
       font-family: "inter", Arial, Helvetica, sans-serif;
     }
+    body {
+      padding: 0 80px;
+    }
+    nav {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(1, 1, 1, 0.183);
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo img {
+      width: 80px;
+      height: 30px;
+    }
+
+    .nav-container ul,
+    li {
+      list-style: none;
+    }
+    @media (max-width: 800px) {
+      body {
+        padding: 0 20px;
+      }
+      .nav-container li {
+        display: none;
+      }
+    }
   </style>
   <body>
-    
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Logo" />
+        </div>
+        <li>Time</li>
+        <li>Status</li>
+        <div class="bar">
+          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" fill-rule="evenodd" d="M3 16h18v2H3zm0-5h18v2H3zm0-5h18v2H3z" /></svg>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
